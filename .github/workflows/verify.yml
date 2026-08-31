@@ -1,0 +1,20 @@
+name: Verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -B 01_Reference_Implementation/SLANG_Cybersecurity_Structural_Chronology_Score_v1_0_0.py --self-test
+      - run: python -B 03_Verification/SLANG_Cybersecurity_Evidence_Verifier_v1_0_0.py --verify
+      - run: python -B 04_Reproduction/SLANG_Cybersecurity_OpTC_Result_Reproduction_v1_0_0.py --self-test
+      - run: python -B 04_Reproduction/SLANG_Cybersecurity_DARPA_TC_E3_Result_Reproduction_v1_0_0.py --self-test
+      - run: python -B 04_Reproduction/SLANG_Cybersecurity_Baseline_and_Sensitivity_Audit_v1_0_0.py --self-test
+      - run: python -B 05_Concept_Demonstration/SLANG_Cybersecurity_Structural_Escalation_Kernel_v1_0_0.py --self-test

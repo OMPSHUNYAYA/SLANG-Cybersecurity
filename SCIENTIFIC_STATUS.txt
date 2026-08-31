@@ -1,0 +1,87 @@
+SLANG-CYBERSECURITY — SCIENTIFIC STATUS v1.0.0
+
+Current classification
+----------------------
+BOUNDED_PARAMETER_FREE_ATTACK_CHRONOLOGY_PREDICTIVE_TRANSFER_RESULT
+
+Structural chronology score
+----------------------------
+A(t) = (t - t_prev) * N_prior / (t - t_first)
+Q(t) = 1 / (1 + A(t))
+
+Q is a dimensionless ranking score with zero fitted coefficients. It is not a
+calibrated probability.
+
+OpTC bounded transfer
+---------------------
+Eligible anchors:                     242
+Positive / negative target windows:  33 / 209
+ROC AUC:                              0.8683485573437727
+Chronological halves:                0.8887457044673539 / 0.8253968253968254
+Informative chronological blocks:    8
+Exact sign-flip assignments:         256
+Exact one-sided sign-flip p:         0.00390625
+Positive informative block effects:  8 / 8
+All informative-block LOBO AUC > .5: true
+Independent project recomputation:   PASS
+
+The exact inference operates at the informative chronological-block level. With
+8 informative blocks, 1/256 is the minimum attainable one-sided sign-flip
+value under the declared exhaustive procedure.
+
+DARPA TC E3 unchanged-score replication
+---------------------------------------
+Eligible anchors:                     708
+Positive / negative target windows:  19 / 689
+ROC AUC:                              0.7468489802154151
+Chronological halves:                0.4900568181818182 / 0.6463606213998953
+Informative chronological blocks:    7
+Exact one-sided sign-flip p:          0.40625
+All informative-block LOBO AUC > .5: true
+Independent project recomputation:   PASS
+Classification:                      NOT CONFIRMED
+
+Post-result comparative audit
+-----------------------------
+The revealed OpTC and E3 targets were subsequently used for a baseline audit on
+the identical eligible anchors and evaluation machinery.
+
+OpTC AUC:
+- Q:                    0.86834856
+- recency:              0.87915036
+- previous 900 s:       0.79744817
+- recent count 900 s:   0.80593011
+- historical rate:      0.56981296
+- fixed EWMA tau=900 s: 0.87936784
+
+Q vs recency on OpTC:
+- delta AUC Q - recency: -0.01080180
+- ranking concordance:    0.93095050
+- paired block p:         0.4375
+
+E3 AUC:
+- Q:                    0.74684898
+- recency:              0.71457490
+- previous 900 s:       0.47097242
+- recent count 900 s:   0.47097242
+- historical rate:      0.49110076
+- fixed EWMA tau=900 s: 0.71300894
+
+Q vs recency on E3:
+- delta AUC Q - recency: +0.03227408
+- ranking concordance:    0.93108556
+- paired blocks favoring Q: 6 / 7
+- paired block p:         0.015625
+
+Interpretation
+--------------
+The OpTC signal is strongly related to temporal recency and clustering; Q does
+not outperform pure recency or the fixed 900-second EWMA there. In E3, Q
+outperforms both of those comparators, showing that its normalization can change
+ranking materially. However, the E3 primary replication itself remains not
+confirmed. Incremental value beyond recency is therefore environment-dependent
+and is not established as a general transfer property.
+
+Independent third-party reproduction
+------------------------------------
+OPEN_NOT_YET_CONFIRMED

@@ -1,0 +1,115 @@
+SLANG-CYBERSECURITY — MODEL AND EVALUATION NOTES v1.0.0
+
+1. Structural chronology score
+------------------------------
+For evaluation anchor t:
+- t_first = first admitted canonical attack-event time observed at or before t
+- t_prev  = most recent admitted canonical attack-event time at or before t
+- N_prior = number of admitted canonical attack events observed at or before t
+
+A(t) = (t - t_prev) * N_prior / (t - t_first)
+Q(t) = 1 / (1 + A(t))
+
+Q is dimensionless and has zero fitted coefficients. Higher Q is the declared
+near-term risk-ranking orientation.
+
+The score can also be written as:
+
+A(t) = lag(t) * historical_rate(t)
+
+where:
+lag(t) = t - t_prev
+historical_rate(t) = N_prior / (t - t_first)
+
+This decomposition makes clear that Q combines event recency with a causal
+history-rate normalization.
+
+2. Causal feature contract
+--------------------------
+Only events at or before t may enter Q(t). At least two prior events are required
+and t must be later than t_first.
+
+3. Target contract
+------------------
+Prediction horizon: 900 seconds.
+Decision cadence: 900 seconds.
+
+Y(t) = 1 iff at least one admitted canonical attack event occurs in (t,t+900].
+An event exactly at t belongs to history and is excluded from the target. An
+event exactly at t+900 is included.
+
+4. Ranking metric
+-----------------
+Primary ranking metric: ROC AUC. Q is not interpreted as a calibrated
+probability.
+
+5. Frozen primary gates
+-----------------------
+- eligible anchors >= 64
+- positive targets >= 8
+- negative targets >= 16
+- overall ROC AUC >= 0.75
+- each predeclared chronological half ROC AUC >= 0.65
+- informative temporal superblocks >= 8
+- exact one-sided sign-flip p <= 0.05
+- every informative-superblock leave-one-block-out overall AUC > 0.5
+- strong-transfer descriptive label requires overall AUC >= 0.80
+
+6. Exact temporal-block inference
+---------------------------------
+Eligible anchors are partitioned into 18 chronological superblocks. A block is
+informative only if it contains both target classes. For each informative block,
+the effect is AUC_block(Q) - 0.5. The one-sided test exhaustively enumerates all
+2^m sign assignments for m informative blocks.
+
+For OpTC, m=8 and all 8 informative block effects favor Q. The reported
+p=0.00390625 is therefore 1/256, the minimum attainable one-sided value for the
+declared 8-block exhaustive sign-flip procedure. The 242 anchors estimate the
+AUC; the exact sign-flip inference is based on the informative block effects.
+
+7. Post-result baseline audit
+-----------------------------
+The baseline audit uses the identical revealed anchors, targets, AUC estimator,
+chronological halves, and superblocks as the reproduction programs.
+
+Parameter-free comparators:
+- recency: 1 / (1 + lag)
+- previous_900s: indicator of at least one prior event in [t-900,t]
+- recent_count_900s: count of prior events in [t-900,t]
+- historical_rate: N_prior / (t-t_first)
+
+A fixed-scale EWMA comparator uses tau=900 seconds, inherited from the declared
+prediction horizon. No tau search or fitting is performed.
+
+Observed overall AUCs:
+
+                     OpTC        E3
+Q                    0.86835     0.74685
+recency              0.87915     0.71457
+previous_900s        0.79745     0.47097
+recent_count_900s    0.80593     0.47097
+historical_rate      0.56981     0.49110
+EWMA tau=900 s       0.87937     0.71301
+
+The OpTC ranking is strongly recency-related. Q versus recency ranking
+concordance is 0.93095, and Q does not outperform recency on OpTC. In E3, Q
+outperforms recency by 0.03227 AUC; six of seven paired informative blocks favor
+Q and the paired exact one-sided sign-flip value is 0.015625. Because E3 fails
+the primary replication gates, this comparison is evidence about score
+composition, not a successful E3 replication.
+
+8. Timestamp-grid diagnostics
+-----------------------------
+OpTC has 3 eligible anchors exactly coincident with admitted event timestamps;
+E3 has 20. The audit reports official, -60-second, and +60-second target-time
+sensitivity for both environments.
+
+E3's +60-second AUC of 1.0 is not primary evidence. Moving events that occur
+exactly at t to t+60 mechanically converts coincident maximal-Q historical
+anchors into future positives while leaving the already computed Q unchanged.
+
+9. Scope boundary
+-----------------
+The project tests temporal risk ranking from prior attack-event chronology. It
+does not infer maliciousness from ordinary raw network or endpoint telemetry in
+these tests and does not constitute a deployable intrusion-detection system.

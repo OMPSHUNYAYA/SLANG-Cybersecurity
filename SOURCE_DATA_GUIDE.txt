@@ -1,0 +1,44 @@
+SLANG-CYBERSECURITY — SOURCE DATA GUIDE v1.0.0
+
+OpTC
+----
+Source repository:
+https://github.com/FiveDirections/OpTC-data
+
+Required source object:
+OpTCRedTeamGroundTruth.pdf
+
+Expected SHA-256:
+5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567
+
+Expected size:
+453244 bytes
+
+DARPA Transparent Computing Engagement 3
+----------------------------------------
+Source repository:
+https://github.com/darpa-i2o/Transparent-Computing
+
+Source documentation:
+README-E3.md
+
+Required source object:
+tc_ground_truth_report_e3_update.pdf
+
+Expected SHA-256:
+021fc642e18544fdcc7bf0a79e2b5aae001f5717d3adbce16744b68934523599
+
+Expected size:
+1258337 bytes
+
+Dependency
+----------
+pypdf==6.16.2
+
+Install:
+python -m pip install pypdf==6.16.2
+
+Rights
+------
+The source objects are not redistributed in this package. Obtain them directly
+from their source under the source's current terms. See THIRD_PARTY_NOTICES.txt.

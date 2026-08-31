@@ -1,0 +1,10 @@
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+LICENSE text eol=lf
+requirements.txt text eol=lf
+*.py -text
+*.json -text
+03_Verification/SCIENTIFIC_ARTIFACT_SHA256SUMS_v1_0_0.txt -text

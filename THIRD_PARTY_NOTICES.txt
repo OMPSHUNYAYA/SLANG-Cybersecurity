@@ -1,0 +1,92 @@
+THIRD-PARTY AND PROVENANCE NOTICES
+
+1. General boundary
+
+The package license covers project-authored materials only. Third-party
+software, libraries, source material, datasets, services, publications, and
+other externally governed materials remain subject to their own terms and are
+not relicensed here.
+
+No complete third-party dataset, ground-truth PDF, telemetry collection, or
+substantial source text is redistributed in this package.
+
+2. Operationally Transparent Cyber (OpTC)
+
+The bounded positive transfer result uses the OpTC red-team ground-truth
+chronology from the FiveDirections/OpTC-data repository. The repository states
+that the data was produced in an isolated evaluation environment and identifies
+OpTCRedTeamGroundTruth.pdf as red-team ground truth.
+
+The official repository states that DARPA releases the files in the public
+domain to stimulate further research. The repository source remains the
+authoritative location for current provenance, disclaimers, and terms.
+
+Source identifiers:
+- FiveDirections/OpTC-data
+- OpTCRedTeamGroundTruth.pdf
+- https://github.com/FiveDirections/OpTC-data
+
+The expected PDF SHA-256 for the project-recorded reproduction route is:
+5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567
+
+The source PDF is not included. Users should obtain it from the source under the
+source's current terms.
+
+3. DARPA Transparent Computing Engagement 3
+
+The second-environment replication attempt uses the DARPA Transparent
+Computing Engagement 3 TA5.1 ground-truth report. DARPA's E3 documentation
+identifies tc_ground_truth_report_e3_update.pdf as ground truth constructed by
+TA5.1 for the engagement.
+
+The official DARPA Transparent Computing E3 documentation states that the
+released files are in the public domain to stimulate further research. The
+source repository remains the authoritative location for current provenance,
+disclaimers, and terms.
+
+Source identifiers:
+- darpa-i2o/Transparent-Computing
+- README-E3.md
+- ground truth/tc_ground_truth_report_e3_update.pdf
+- https://github.com/darpa-i2o/Transparent-Computing
+
+The expected PDF SHA-256 for the project-recorded reproduction route is:
+021fc642e18544fdcc7bf0a79e2b5aae001f5717d3adbce16744b68934523599
+
+The source PDF is not included. Users should obtain it from the source under the
+source's current terms.
+
+4. pypdf
+
+The source-reproduction programs use pypdf 6.16.2 to extract text from the two
+source PDFs. pypdf 6.16.2 is distributed under the BSD-3-Clause license. pypdf
+is not bundled in this package and remains subject to its own license and terms.
+
+Project reproduction dependency:
+- pypdf==6.16.2
+- https://pypi.org/project/pypdf/
+
+5. Scientific facts and minimum factual inputs
+
+Names, dates, identifiers, numerical measurements, hashes, and similar facts are
+retained only where needed to describe provenance or reproduce the declared
+project calculations. Parser self-tests use synthetic strings rather than
+source-document action descriptions. No ownership claim is made over underlying
+facts.
+
+6. Rights boundary
+
+Project-authored materials: Copyright © 2026 Shunyaya Framework contributors,
+subject to the package license map and applicable Apache-2.0 / CC BY-NC 4.0
+terms.
+
+Third-party copyright, database rights, attribution requirements, licenses,
+contractual terms, institutional terms of use, and other applicable rights
+remain with their respective owners and are not overridden by the package
+LICENSE.
+
+7. No rights override
+
+Nothing in the package LICENSE or documentation overrides third-party
+copyright, database rights, attribution requirements, licenses, contractual
+terms, or other applicable rights.

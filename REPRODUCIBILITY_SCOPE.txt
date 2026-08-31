@@ -1,0 +1,40 @@
+SLANG-CYBERSECURITY — REPRODUCIBILITY SCOPE v1.0.0
+
+Runnable from this package
+-------------------------
+1. Parameter-free structural chronology score self-test and demonstration.
+2. Evidence-ledger and selected key-artifact integrity verifier.
+3. OpTC reproduction program self-test.
+4. DARPA TC E3 reproduction program self-test.
+5. Baseline and sensitivity audit self-test.
+6. Structural escalation concept demonstration and self-test.
+
+Source-dependent reproduction
+-----------------------------
+The empirical reproduction and comparative-audit programs require locally
+obtained source PDFs:
+- OpTCRedTeamGroundTruth.pdf
+- TC_Ground_Truth_Report_E3_Update.pdf or the equivalent source filename
+
+The programs verify expected source identities before calculation and require
+pypdf 6.16.2 for extraction.
+
+Reproducing a revealed historical result checks that the declared parsing,
+chronology construction, score, target rule, AUC calculation, temporal-block
+inference, and reported metrics can be regenerated. It does not recreate the
+original blind chronology.
+
+Primary versus post-result evidence
+-----------------------------------
+The OpTC and E3 primary-result reproduction programs reproduce the declared
+frozen tests. The baseline and sensitivity audit is explicitly post-result: it
+uses already revealed targets to compare Q with simple chronology baselines on
+the identical anchors and evaluation machinery. It does not modify the frozen
+primary results.
+
+Independent reproduction
+------------------------
+A stronger independent reproduction should obtain the cited source data
+separately, inspect the code and protocol, reproduce all primary and comparative
+results, and report both successful and unsuccessful gates without modifying the
+score.

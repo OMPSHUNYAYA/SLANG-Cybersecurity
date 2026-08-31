@@ -1,0 +1,46 @@
+SLANG-CYBERSECURITY — CLAIM BOUNDARIES v1.0.0
+
+Permitted framing
+-----------------
+- bounded predictive ranking of near-term red-team attack-event timing from
+  prior admitted attack-event chronology;
+- frozen parameter-free structural chronology score;
+- zero dataset-specific coefficient fitting or probability recalibration in the
+  declared OpTC transfer test;
+- project-recorded OpTC ROC AUC 0.8683485573437727;
+- exact one-sided sign-flip inference over 8 informative OpTC chronological
+  blocks, all 8 favoring Q, with p = 1/256 = 0.00390625;
+- independently recomputed project result for the OpTC test;
+- documented E3 non-replication under the unchanged score and gates;
+- post-result comparative analysis against recency, recent-window, historical
+  rate, and a fixed 900-second EWMA using already revealed truth.
+
+Required qualifications
+-----------------------
+- Q is a ranking score, not a calibrated probability;
+- the score operates on prior admitted attack-event chronology rather than raw
+  benign/malicious telemetry classification;
+- OpTC establishes one bounded untouched-environment transfer result;
+- simple recency slightly outperforms Q on OpTC overall AUC;
+- Q outperforms recency on E3, but E3 still fails the frozen primary
+  replication criteria;
+- repeated cross-environment replication is not established;
+- general superiority over simple recency or temporal-intensity baselines is not
+  established;
+- independent third-party reproduction remains open;
+- source ground-truth PDFs are not redistributed;
+- historical commitment hashes are project integrity records and are not
+  independently timestamped proof of chronology.
+
+Not claimed
+-----------
+- universal cyberattack prediction;
+- production intrusion detection or SIEM replacement;
+- calibrated cyberattack probabilities;
+- operational deployment readiness;
+- superiority over commercial, governmental, or research security systems;
+- repeated cross-environment replication;
+- general baseline superiority;
+- completed independent third-party reproduction;
+- peer review, certification, or institutional endorsement;
+- that the E3 +60-second timestamp diagnostic is predictive evidence.

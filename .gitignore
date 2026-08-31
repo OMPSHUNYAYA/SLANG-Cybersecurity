@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+OpTCRedTeamGroundTruth.pdf
+TC_Ground_Truth_Report_E3_Update.pdf
+04_Reproduction/SLANG_Cybersecurity_OpTC_Baseline_and_Sensitivity_Audit_v1_0_0.json
+04_Reproduction/SLANG_Cybersecurity_DARPA_TC_E3_Baseline_and_Sensitivity_Audit_v1_0_0.json

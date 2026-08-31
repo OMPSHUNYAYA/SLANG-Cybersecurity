@@ -1,0 +1,351 @@
+{
+  "claim_boundary": {
+    "bounded_predictive_transfer_result": true,
+    "deployment_readiness_claimed": false,
+    "historical_hashes_independently_timestamped_before_truth_reveal": false,
+    "independent_third_party_reproduction_complete": false,
+    "probability_forecasting_claimed": false,
+    "repeated_cross_environment_replication_established": false,
+    "superiority_over_security_systems_claimed": false,
+    "universal_cyberattack_prediction_claimed": false
+  },
+  "core_score": {
+    "A": "(t-t_prev)*N_prior/(t-t_first)",
+    "Q": "1/(1+A)",
+    "cadence_seconds": 900,
+    "classification": "PARAMETER_FREE_STRUCTURAL_CHRONOLOGY_SCORE",
+    "fitted_coefficients": 0,
+    "horizon_seconds": 900,
+    "probability_calibration": false,
+    "risk_orientation": "higher_Q_means_higher_near_term_attack_event_risk"
+  },
+  "evidence": {
+    "darpa_tc_e3": {
+      "all_lobo_overall_auc_gt_0_5": true,
+      "anchor_event_time_coincidence_count": 20,
+      "canonical_event_count": 26,
+      "canonical_event_stream_sha256": "c80bbc4312ea3c0a7ebfb70e672e86e62f70c5da3c02a8d2e8422a8ffb62d354",
+      "classification": "SECOND_ENVIRONMENT_UNCHANGED_Q_REPLICATION_NOT_CONFIRMED",
+      "coincident_rows_with_q_equal_1_count": 20,
+      "eligible_anchors": 708,
+      "exact_one_sided_signflip_p": 0.40625,
+      "exact_signflip_assignments": 128,
+      "half_1_auc": 0.4900568181818182,
+      "half_2_auc": 0.6463606213998953,
+      "independent_project_audit_id": "slang_cybersecurity_r32f_audit_sha256:85a3d105fd9cfccb723130125a77ac258035627b92a3589ceeddb3ef3e38aeb5",
+      "independent_project_report_id": "slang_cybersecurity_r32f_report_sha256:2ed19e50cd8fd468553003f4e917c13fc2aa25c1c4fbf91e3ec0f6b96176dfb1",
+      "informative_superblock_count": 7,
+      "informative_superblock_ids": [
+        7,
+        9,
+        11,
+        12,
+        14,
+        16,
+        17
+      ],
+      "minus_60_seconds_auc": 0.7468489802154151,
+      "negative_targets": 689,
+      "official_positive_targets_among_coincident_rows": 0,
+      "plus60_positive_targets_among_coincident_rows": 20,
+      "plus_60_seconds_auc": 1.0,
+      "positive_targets": 19,
+      "precommit_id": "slang_cybersecurity_r32a_precommit_sha256:ff72c1651e933ed4daa3327d10cab22f7f3fe9b9137bd71802b4ea89bfe62df9",
+      "primary_plain_text_sha256": "83b713d529231257cf40afe8165ac2888b8db1152f871b294c4d275edb081915",
+      "pypdf_version": "6.16.2",
+      "roc_auc": 0.7468489802154151,
+      "score_id": "slang_cybersecurity_r32e_e3_score_sha256:3f5e744fccba635c14d6c6e86ecac0965420bd1f1f99bf62f7bd2cc463ded999",
+      "scored_rows_sha256": "e0905bf30898874c1dff90b967fa1642d1528c4d7f377e66741491c8dfb68636",
+      "sealed_prediction_certificate_id": "slang_cybersecurity_r32d_e3_q_prediction_certificate_sha256:4eb61803692ba955297fc0a0f2fcebd00fa719225f1679ba0cc09ad040741cd4",
+      "sealed_q_rows_sha256": "bc090f21395a68caf51299896987cdf69bb25548d935c223454c227045f49f34",
+      "source_id": "DARPA_TRANSPARENT_COMPUTING_ENGAGEMENT_3_TA5_1_GROUND_TRUTH",
+      "source_pdf_bytes": 1258337,
+      "source_pdf_pages": 47,
+      "source_pdf_sha256": "021fc642e18544fdcc7bf0a79e2b5aae001f5717d3adbce16744b68934523599",
+      "target_rows_sha256": "a12ce82f69670339769f99034d6b27b9dbbada9d91eb339d842a5900cc7ed3db",
+      "unchanged_q_replication_pass": false
+    },
+    "optc": {
+      "all_lobo_overall_auc_gt_0_5": true,
+      "canonical_event_count": 101,
+      "canonical_event_stream_sha256": "b8f70f094535dcd344312e178953137133a55d9f5d9050c7ab68313e896737fa",
+      "classification": "BOUNDED_PARAMETER_FREE_ATTACK_CHRONOLOGY_PREDICTIVE_TRANSFER_RESULT",
+      "eligible_anchors": 242,
+      "exact_one_sided_signflip_p": 0.00390625,
+      "exact_signflip_assignments": 256,
+      "half_1_auc": 0.8887457044673539,
+      "half_2_auc": 0.8253968253968254,
+      "independent_project_audit_id": "slang_cybersecurity_r31g_audit_sha256:1d4e5c3b8b377a59c37ec35dc8e88038fa54a8d6f0112532cec286918a6aaa44",
+      "independent_project_report_id": "slang_cybersecurity_r31g_report_sha256:7a1dcf73b16a2454aac6a9a33e9059f0e7d7d55de4082be66dbc89407c9d2309",
+      "informative_superblock_count": 8,
+      "informative_superblock_ids": [
+        0,
+        1,
+        6,
+        7,
+        8,
+        13,
+        14,
+        15
+      ],
+      "minus_60_seconds_auc": 0.8702334348267362,
+      "negative_targets": 209,
+      "plus_60_seconds_auc": 0.9131506452080614,
+      "positive_targets": 33,
+      "primary_plain_text_sha256": "00bfe9f179c4cfc2b4106219e7973b896beadf40519282934d601ff6ff3efa1c",
+      "primary_transfer_pass": true,
+      "pypdf_version": "6.16.2",
+      "roc_auc": 0.8683485573437727,
+      "score_id": "slang_cybersecurity_r31f_optc_score_sha256:9220c80fc3b022d7dd176174f9b61ced8ac846af5d6ebf047f6d108c5a9d34a7",
+      "scored_rows_sha256": "4eac55eae2e06a0ba25091e86c649a7d8a99176b69eba01afc2671acf737d258",
+      "sealed_prediction_certificate_id": "slang_cybersecurity_r31e_q_prediction_certificate_sha256:7a84bbff666b5812829868396f36e67e3ad66138943330a843d77f421cf212dd",
+      "sealed_q_rows_sha256": "5c8f1a3dbdeac5572fc5741af32d3d8980d5945585fda58677d5cecdea8c89ef",
+      "source_id": "DARPA_OPTC_RED_TEAM_GROUND_TRUTH",
+      "source_pdf_bytes": 453244,
+      "source_pdf_pages": 7,
+      "source_pdf_sha256": "5986d23b81169221a491f7a8302fce140b12638ef4cf9b3a894ed3cb2fad9567",
+      "strong_transfer": true,
+      "target_rows_sha256": "206b71630776c8ea9314a9557a21b0d26ca95106d2d2d17f08342da116793c04"
+    },
+    "score_freeze": {
+      "precommit_id": "slang_cybersecurity_r31b_precommit_sha256:3b326898385c7d6998ad92eec6ab7069c21f3eb66173364769e7b31c88a9deaf",
+      "third_dataset_selected_at_freeze": false,
+      "third_dataset_truth_accessed_at_freeze": false
+    }
+  },
+  "frozen_primary_gates": {
+    "all_informative_superblock_lobo_overall_auc_gt_0_5": true,
+    "exact_one_sided_signflip_p_max": 0.05,
+    "minimum_each_chronological_half_auc": 0.65,
+    "minimum_eligible_anchors": 64,
+    "minimum_informative_superblocks": 8,
+    "minimum_negative_targets": 16,
+    "minimum_overall_auc": 0.75,
+    "minimum_positive_targets": 8,
+    "strong_transfer_auc": 0.8,
+    "temporal_superblocks": 18
+  },
+  "post_result_comparative_audit": {
+    "darpa_tc_e3": {
+      "eligible_anchors": 708,
+      "environment": "DARPA_TC_E3",
+      "fixed_scale_ewma_horizon": {
+        "auc": 0.71300894,
+        "delta_auc_Q_minus_ewma": 0.03384004,
+        "half_1_auc": 0.484375,
+        "half_2_auc": 0.61031594,
+        "parameter_search_used": false,
+        "tau_seconds": 900
+      },
+      "grid_and_timestamp_sensitivity": {
+        "grid_coincident_Q_equal_1_count": 20,
+        "grid_coincident_anchor_count": 20,
+        "jitter_is_diagnostic_only": true,
+        "minus_60_seconds_auc_Q": 0.7468489802154151,
+        "official_auc_Q": 0.7468489802154151,
+        "official_positive_targets_among_coincident_anchors": 0,
+        "plus_60_positive_targets_among_coincident_anchors": 20,
+        "plus_60_seconds_auc_Q": 1.0
+      },
+      "half_split": 354,
+      "interpretation": "Q outperforms pure recency and the fixed 900-second EWMA in E3, but E3 still fails the frozen primary replication criteria.",
+      "negative_targets": 689,
+      "paired_parameter_free_comparisons": {
+        "Q_vs_historical_rate": {
+          "delta_auc_Q_minus_baseline": 0.25574822,
+          "exact_one_sided_signflip_p": 0.0234375,
+          "paired_blocks": 7,
+          "positive_block_differences": 6,
+          "ranking_concordance": 0.65358356
+        },
+        "Q_vs_previous_900s": {
+          "delta_auc_Q_minus_baseline": 0.27587656,
+          "exact_one_sided_signflip_p": 0.1171875,
+          "paired_blocks": 7,
+          "positive_block_differences": 4,
+          "ranking_concordance": 0.99670659
+        },
+        "Q_vs_recency": {
+          "delta_auc_Q_minus_baseline": 0.03227408,
+          "exact_one_sided_signflip_p": 0.015625,
+          "paired_blocks": 7,
+          "positive_block_differences": 6,
+          "ranking_concordance": 0.93108556
+        },
+        "Q_vs_recent_count_900s": {
+          "delta_auc_Q_minus_baseline": 0.27587656,
+          "exact_one_sided_signflip_p": 0.1171875,
+          "paired_blocks": 7,
+          "positive_block_differences": 4,
+          "ranking_concordance": 0.99190945
+        }
+      },
+      "parameter_free_scores": {
+        "Q": {
+          "auc": 0.74684898,
+          "exact_one_sided_signflip_p": 0.40625,
+          "half_1_auc": 0.49005682,
+          "half_2_auc": 0.64636062,
+          "informative_blocks": 7,
+          "positive_block_effects": 2
+        },
+        "historical_rate": {
+          "auc": 0.49110076,
+          "exact_one_sided_signflip_p": 1.0,
+          "half_1_auc": 0.10085227,
+          "half_2_auc": 0.40268808,
+          "informative_blocks": 7,
+          "positive_block_effects": 0
+        },
+        "previous_900s": {
+          "auc": 0.47097242,
+          "exact_one_sided_signflip_p": 1.0,
+          "half_1_auc": 0.49147727,
+          "half_2_auc": 0.4495549,
+          "informative_blocks": 7,
+          "positive_block_effects": 0
+        },
+        "recency": {
+          "auc": 0.7145749,
+          "exact_one_sided_signflip_p": 0.4453125,
+          "half_1_auc": 0.48579545,
+          "half_2_auc": 0.61206144,
+          "informative_blocks": 7,
+          "positive_block_effects": 2
+        },
+        "recent_count_900s": {
+          "auc": 0.47097242,
+          "exact_one_sided_signflip_p": 1.0,
+          "half_1_auc": 0.49147727,
+          "half_2_auc": 0.4495549,
+          "informative_blocks": 7,
+          "positive_block_effects": 0
+        }
+      },
+      "positive_targets": 19,
+      "prediction_horizon_seconds": 900,
+      "primary_frozen_result_modified": false,
+      "record_type": "POST_RESULT_COMPARATIVE_AUDIT"
+    },
+    "optc": {
+      "eligible_anchors": 242,
+      "environment": "OpTC",
+      "fixed_scale_ewma_horizon": {
+        "auc": 0.87936784,
+        "delta_auc_Q_minus_ewma": -0.01101928,
+        "half_1_auc": 0.87585911,
+        "half_2_auc": 0.83531746,
+        "parameter_search_used": false,
+        "tau_seconds": 900
+      },
+      "grid_and_timestamp_sensitivity": {
+        "grid_coincident_Q_equal_1_count": 3,
+        "grid_coincident_anchor_count": 3,
+        "jitter_is_diagnostic_only": true,
+        "minus_60_seconds_auc_Q": 0.8702334348267362,
+        "official_auc_Q": 0.8683485573437727,
+        "official_positive_targets_among_coincident_anchors": 0,
+        "plus_60_positive_targets_among_coincident_anchors": 3,
+        "plus_60_seconds_auc_Q": 0.9131506452080614
+      },
+      "half_split": 121,
+      "interpretation": "Q captures a strong chronology signal on OpTC but does not outperform pure recency or the fixed 900-second EWMA in overall AUC.",
+      "negative_targets": 209,
+      "paired_parameter_free_comparisons": {
+        "Q_vs_historical_rate": {
+          "delta_auc_Q_minus_baseline": 0.2985356,
+          "exact_one_sided_signflip_p": 0.015625,
+          "paired_blocks": 8,
+          "positive_block_differences": 6,
+          "ranking_concordance": 0.60398518
+        },
+        "Q_vs_previous_900s": {
+          "delta_auc_Q_minus_baseline": 0.07090039,
+          "exact_one_sided_signflip_p": 0.1484375,
+          "paired_blocks": 8,
+          "positive_block_differences": 5,
+          "ranking_concordance": 0.9878708
+        },
+        "Q_vs_recency": {
+          "delta_auc_Q_minus_baseline": -0.0108018,
+          "exact_one_sided_signflip_p": 0.4375,
+          "paired_blocks": 8,
+          "positive_block_differences": 3,
+          "ranking_concordance": 0.9309505
+        },
+        "Q_vs_recent_count_900s": {
+          "delta_auc_Q_minus_baseline": 0.06241844,
+          "exact_one_sided_signflip_p": 0.1484375,
+          "paired_blocks": 8,
+          "positive_block_differences": 5,
+          "ranking_concordance": 0.95741267
+        }
+      },
+      "parameter_free_scores": {
+        "Q": {
+          "auc": 0.86834856,
+          "exact_one_sided_signflip_p": 0.00390625,
+          "half_1_auc": 0.8887457,
+          "half_2_auc": 0.82539683,
+          "informative_blocks": 8,
+          "positive_block_effects": 8
+        },
+        "historical_rate": {
+          "auc": 0.56981296,
+          "exact_one_sided_signflip_p": 0.79296875,
+          "half_1_auc": 0.54209622,
+          "half_2_auc": 0.37400794,
+          "informative_blocks": 8,
+          "positive_block_effects": 2
+        },
+        "previous_900s": {
+          "auc": 0.79744817,
+          "exact_one_sided_signflip_p": 0.02734375,
+          "half_1_auc": 0.80777491,
+          "half_2_auc": 0.75099206,
+          "informative_blocks": 8,
+          "positive_block_effects": 6
+        },
+        "recency": {
+          "auc": 0.87915036,
+          "exact_one_sided_signflip_p": 0.00390625,
+          "half_1_auc": 0.89175258,
+          "half_2_auc": 0.82490079,
+          "informative_blocks": 8,
+          "positive_block_effects": 8
+        },
+        "recent_count_900s": {
+          "auc": 0.80593011,
+          "exact_one_sided_signflip_p": 0.03515625,
+          "half_1_auc": 0.81464777,
+          "half_2_auc": 0.75496032,
+          "informative_blocks": 8,
+          "positive_block_effects": 6
+        }
+      },
+      "positive_targets": 33,
+      "prediction_horizon_seconds": 900,
+      "primary_frozen_result_modified": false,
+      "record_type": "POST_RESULT_COMPARATIVE_AUDIT"
+    },
+    "primary_frozen_results_modified": false,
+    "purpose": "Compare Q against simple chronology baselines on the identical revealed evaluation anchors and targets.",
+    "summary": {
+      "e3_q_vs_recency_auc_delta": 0.03227408,
+      "e3_q_vs_recency_paired_block_p": 0.015625,
+      "interpretation": "The score is strongly recency-related but not algebraically redundant with recency; incremental value is environment-dependent and is not established as a general transfer property.",
+      "optc_q_vs_recency_auc_delta": -0.0108018,
+      "optc_q_vs_recency_paired_block_p": 0.4375
+    }
+  },
+  "project": "SLANG-Cybersecurity",
+  "rights_boundary": {
+    "bulk_third_party_datasets_embedded": false,
+    "complete_third_party_objects_embedded": false,
+    "project_derivations_separately_identified": true,
+    "substantial_third_party_source_text_embedded": false,
+    "third_party_terms_overridden": false
+  },
+  "scientific_status": "BOUNDED_PARAMETER_FREE_ATTACK_CHRONOLOGY_PREDICTIVE_TRANSFER_RESULT",
+  "version": "1.0.0"
+}

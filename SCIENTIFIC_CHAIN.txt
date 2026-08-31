@@ -1,0 +1,28 @@
+SLANG-CYBERSECURITY — PROJECT EVIDENCE CHAIN v1.0.0
+
+Evidence progression
+--------------------
+Initial fitted chronology model                              ESTABLISHED
+Cross-environment fitted-model evaluation on LANL            NOT CONFIRMED
+Orientation and scale diagnostic on revealed historical data DIAGNOSTIC
+Parameter-free dimensionless Q score frozen                  FROZEN
+OpTC source selected after Q freeze                          FROZEN SOURCE
+OpTC Q rankings sealed before target reveal                  SEALED
+OpTC single-shot target reveal                               PASS
+OpTC independent project recomputation                       PASS
+Unchanged Q carried into DARPA TC E3                         FROZEN
+E3 Q rankings sealed before target reveal                    SEALED
+E3 single-shot target reveal                                 NOT CONFIRMED
+E3 independent project recomputation                         PASS
+Post-result baseline and sensitivity audit                   COMPARATIVE
+
+Current interpretation
+----------------------
+BOUNDED_PARAMETER_FREE_ATTACK_CHRONOLOGY_PREDICTIVE_TRANSFER_RESULT
+
+The OpTC result is retained as one bounded predictive-transfer result. The E3
+non-replication establishes a generalization boundary. Post-result baseline
+analysis shows that the score is strongly recency-related but not equivalent to
+recency; its incremental value is environment-dependent.
+
+Independent third-party reproduction remains OPEN_NOT_YET_CONFIRMED.

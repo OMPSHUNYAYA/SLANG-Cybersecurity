@@ -1,0 +1,15 @@
+COPYRIGHT AND RIGHTS NOTICE
+
+Copyright © 2026 Shunyaya Framework contributors.
+
+Project-authored reference implementation, verification scripts, reproduction
+programs, and concept demonstration are licensed under the Apache License,
+Version 2.0.
+
+Project-authored documentation and explanatory materials are licensed under
+CC BY-NC 4.0 unless a file states otherwise.
+
+Third-party materials remain subject to their respective rights and terms and
+are not relicensed by this notice.
+
+See LICENSE and THIRD_PARTY_NOTICES.txt.

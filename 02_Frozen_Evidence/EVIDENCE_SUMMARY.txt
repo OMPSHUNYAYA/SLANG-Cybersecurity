@@ -1,0 +1,66 @@
+SLANG-CYBERSECURITY — EVIDENCE SUMMARY v1.0.0
+
+Structural chronology score
+---------------------------
+A(t) = (t - t_prev) * N_prior / (t - t_first)
+Q(t) = 1 / (1 + A(t))
+
+The score has zero fitted coefficients and was frozen before OpTC was selected.
+
+OpTC bounded transfer
+---------------------
+Eligible anchors:                     242
+Positive / negative target windows:  33 / 209
+ROC AUC:                              0.8683485573437727
+Chronological halves:                0.8887457044673539 / 0.8253968253968254
+Informative temporal superblocks:    8
+Positive informative block effects:  8 / 8
+Exact one-sided sign-flip p:         0.00390625 = 1/256
+All informative-block LOBO AUC > .5: true
+Independent project recomputation:   PASS
+Classification:                      BOUNDED TRANSFER RESULT
+
+DARPA TC E3 unchanged-score replication
+---------------------------------------
+Eligible anchors:                     708
+Positive / negative target windows:  19 / 689
+ROC AUC:                              0.7468489802154151
+Chronological halves:                0.4900568181818182 / 0.6463606213998953
+Informative temporal superblocks:    7
+Exact one-sided sign-flip p:         0.40625
+All informative-block LOBO AUC > .5: true
+Independent project recomputation:   PASS
+Classification:                      REPLICATION NOT CONFIRMED
+
+Post-result comparative audit
+-----------------------------
+Overall AUC:
+                     OpTC        E3
+Q                    0.86835     0.74685
+recency              0.87915     0.71457
+previous_900s        0.79745     0.47097
+recent_count_900s    0.80593     0.47097
+historical_rate      0.56981     0.49110
+EWMA tau=900 s       0.87937     0.71301
+
+OpTC Q vs recency:
+- delta AUC Q - recency: -0.01080180
+- ranking concordance: 0.93095050
+- paired exact block p: 0.4375
+
+E3 Q vs recency:
+- delta AUC Q - recency: +0.03227408
+- ranking concordance: 0.93108556
+- paired blocks favoring Q: 6 / 7
+- paired exact block p: 0.015625
+
+The comparative audit is post-result and does not modify the frozen primary
+results.
+
+Current result
+--------------
+BOUNDED_PARAMETER_FREE_ATTACK_CHRONOLOGY_PREDICTIVE_TRANSFER_RESULT
+
+Repeated cross-environment replication and general baseline superiority are not
+established. Independent third-party reproduction remains
+OPEN_NOT_YET_CONFIRMED.
