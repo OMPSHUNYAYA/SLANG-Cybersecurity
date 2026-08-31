@@ -51,6 +51,16 @@ See [Scientific Status](./SCIENTIFIC_STATUS.txt) and [Claim Boundaries](./CLAIM_
 
 ---
 
+## Structural flow
+
+[![SLANG-Cybersecurity structural flow](https://raw.githubusercontent.com/OMPSHUNYAYA/SLANG-Cybersecurity/main/SLANG-Cybersecurity-Diagram.png)](https://github.com/OMPSHUNYAYA/SLANG-Cybersecurity/blob/main/SLANG-Cybersecurity-Diagram.png)
+
+*Prior cyber attack chronology -> parameter-free structural score -> frozen bounded prediction test -> reproducible evidence.*
+
+🔎 [**View full-size diagram**](https://github.com/OMPSHUNYAYA/SLANG-Cybersecurity/blob/main/SLANG-Cybersecurity-Diagram.png)
+
+---
+
 ## Status at a glance
 
 Current classification:
